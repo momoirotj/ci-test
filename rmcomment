@@ -1,0 +1,28 @@
+#!/bin/sh
+
+if [ $# -le 0 ] ; then
+    echo 'Usage: ./rmcomment.sh file1 file2 ...'
+fi
+
+while [ $# -gt 0 ]
+do
+    if [ ! -e $1 ] ;
+    then
+        echo "$1 is not exist."
+        shift
+        continue
+    fi
+
+    if [ ! -f $1 ] ;
+    then
+        echo "$1 is directory."
+        shift
+        continue
+    fi
+
+    sed -ri -e 's/(^#.*$|[ \t]*#.*$)//g' $1
+    sed -i -e '/^$/d' $1
+    echo "$1 remove comment line and adjust blanks."
+    shift
+
+done
