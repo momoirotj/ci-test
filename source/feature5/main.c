@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char** argv){
-    printf("Hello World.\n");
+    printf("This is feature5. feature5 is window1.\n");
     return 0;
 }
 
