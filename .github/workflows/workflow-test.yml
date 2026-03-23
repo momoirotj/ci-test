@@ -3,7 +3,7 @@ name: workflow-test
 on:
   workflow_dispatch:
 
-job:
+jobs:
   print-log:
     runs-on: ubuntu-latest
 
