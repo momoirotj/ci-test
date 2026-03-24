@@ -9,4 +9,6 @@ jobs:
 
     steps:
       - name: print log
-        run: echo "hello world!"
+        run: |
+          echo "hello world!"
+          echo "This is ci-test repository"
