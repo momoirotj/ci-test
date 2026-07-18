@@ -16,3 +16,5 @@ pip install -r requirements.txt
 ```sh
 pytest
 ```
+
+src, test配下に、`__pycache__`ディレクトリができるので手動で削除する
