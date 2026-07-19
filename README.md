@@ -2,7 +2,7 @@
 
 ## python環境の準備
 
-以下のコマンドを実行する
+ルートディレクトリで以下のコマンドを実行する
 
 ```sh
 python3 -m venv .venv
@@ -17,4 +17,16 @@ pip install -r requirements.txt
 pytest
 ```
 
-src, test配下に、`__pycache__`ディレクトリができるので手動で削除する
+## キャッシュファイル等の削除
+
+以下のコマンドで削除できる
+
+```sh
+git clean -fdx
+```
+
+削除されるファイルを確認する場合、以下でドライランできる
+
+```sh
+git clean -ndx
+```
